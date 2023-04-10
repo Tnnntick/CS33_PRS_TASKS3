@@ -1,0 +1,56 @@
+<!--<head>-->
+<!--  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />-->
+<!--  <link rel="stylesheet" href="stylee.css">-->
+<!--</head>-->
+
+<!--<p style="color: green"><%#= notice %></p>-->
+<%= stylesheet_link_tag 'application', media: 'all' %>
+<%= javascript_include_tag 'application' %>
+<h1>Libraries</h1>
+
+<div id="libraries">
+  <% @libraries.each do |library| %>
+    <%= render library %>
+    <p>
+      <%= link_to "Show this library", library %>
+    </p>
+  <% end %>
+</div>
+<br>
+<%= link_to "New library", new_library_path %>
+
+<!--<p style="color: green"><%#= notice %></p>-->
+
+<!--<h1>Libraries</h1>-->
+
+<!--<table>-->
+<!--  <thead>-->
+<!--  <tr>-->
+<!--    <th>name_l</th>-->
+<!--    <th>city_l</th>-->
+<!--    <th>country_l</th>-->
+<!--    <th>age_l</th>-->
+<!--    <th>books_l</th>-->
+<!--    <th>cards_l</th>-->
+<!--    <th>show</th>-->
+
+<!--  </tr>-->
+<!--  </thead>-->
+
+<!--  <tbody>-->
+  <%# @libraries.each do |library| %>
+<!--    <tr>-->
+<!--      <td><%#= library.name_l %></td>-->
+<!--      <td><%#= library.city_l %></td>-->
+<!--      <td><%#= library.country_l %></td>-->
+<!--      <td><%#= library.age_l %></td>-->
+<!--      <td><%#= library.books_l %></td>-->
+<!--      <td><%#= library.cards_l %></td>-->
+<!--      <td><%#= link_to "Show this library", library %></td>-->
+
+<!--    </tr>-->
+  <%# end %>
+<!--  </tbody>-->
+<!--</table>-->
+<!--<br>-->
+<%#= link_to "New library", new_library_path %>

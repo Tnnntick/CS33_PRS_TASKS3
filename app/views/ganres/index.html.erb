@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Ganres</h1>
+
+<div id="ganres">
+  <% @ganres.each do |ganre| %>
+    <%= render ganre %>
+    <p>
+      <%= link_to "Show this ganre", ganre %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New ganre", new_ganre_path %>

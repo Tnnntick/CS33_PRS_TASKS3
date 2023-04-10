@@ -1,0 +1,8 @@
+<h1>MAINUSER PAGE</h1>
+<center>
+<% if mainuser_signed_in? %>
+  <div> Hiiii <%= current_mainuser.email  %></div>
+  <%= button_to "sign out", destroy_mainuser_session_path, method: :delete  %>
+  <% else %>
+  <%= button_to "sign in", new_mainuser_session_path  %>
+  <% end %>

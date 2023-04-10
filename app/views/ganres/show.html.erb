@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @ganre %>
+
+<div>
+  <%= link_to "Edit this ganre", edit_ganre_path(@ganre) %> |
+  <%= link_to "Back to ganres", ganres_path %>
+
+  <%= button_to "Destroy this ganre", @ganre, method: :delete %>
+</div>
